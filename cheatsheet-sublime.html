@@ -1,0 +1,624 @@
+<!doctype html>
+<html>
+  
+  <head>
+    <script src="https://app.divshot.com/js/jquery.min.js"></script>
+    <script src="https://app.divshot.com/js/bootstrap.min.js"></script>
+    <title>0 Sublime Text 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+
+
+<style>
+td.key {
+  text-align:right;
+  font-weight:bold;
+} 
+
+
+.table td, .table th {
+  border:0;
+  font-weight: bold;
+}
+
+.table .unconfirmed td {
+  font-weight: 100;
+}
+
+.table .unconfirmed td.key {
+  font-weight: bold;
+}
+
+.table th {
+  border-top:0;
+  background-color:#eeeeee;
+}
+
+.table td.span1, .table th.span1 {
+width: 14px !important;
+}
+
+.table td.span2, .table th.span2 {
+width: 154px !important;
+}
+
+
+.span2 {
+  text-transform: capitalize;
+}
+
+    .char1 { color: violet; }
+    /*.char2 { color: orange; }
+    .char3 { color: yellow; }*/
+
+    .char1, .char2, .char3, .char4, .char5 {
+      border:1px solid grey;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+      min-width:10px;
+      padding:3px;
+      margin-left:2px;
+    }
+
+
+
+    /*.char4 { color: blue; border:1px solid green; }
+    .char5 { color: green; }
+    .char6 { color: indigo; }
+    .char7 { color: violet; }*/
+  </style>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="jquery.lettering.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      $(".key").lettering();
+    });
+  </script>
+
+  </head>
+  
+  <body>
+
+
+
+
+    <title>0 Sublime Text 2</title>
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="span4">
+          <table class="table" border="0">
+            <!--<thead>
+              <tr class="unconfirmed">
+                <th class="span1 key"></th>
+                <th class="span2">Vim</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr class="unconfirmed">
+                <td class="span1 key">:w</td>
+                <td class="span2">save file</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">j</td>
+                <td class="span2">move cursor up one line</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">k</td>
+                <td class="span2">move cursor down one line</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">h</td>
+                <td class="span2">move cursor one position right</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">l</td>
+                <td class="span2">move cursor one position left</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">e</td>
+                <td class="span2">move cursor to the end of word</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">0</td>
+                <td class="span2">move cursor to beginning of line</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">^</td>
+                <td class="span2">move cursor to frst non-whitespace character on the line</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">$</td>
+                <td class="span2">move cursor to end of line</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">⇧h</td>
+                <td class="span2">move cursor to the first line of screen</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">⇧m</td>
+                <td class="span2">move cursor to the middle of the screen</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">⇧l</td>
+                <td class="span2">move cursor to the bottom of the screen</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">i</td>
+                <td class="span2">insert before cursor</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">⇧i</td>
+                <td class="span2">insert at the beginning of current line</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">a</td>
+                <td class="span2">append after cursor</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">⇧a</td>
+                <td class="span2">append to the end of the current line</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">o</td>
+                <td class="span2">insert on a new line below</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">⇧O</td>
+                <td class="span2">insert on a new line above</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">r</td>
+                <td class="span2">overwrite current and return to command mode</td>
+              </tr>
+ 
+               <tr class="unconfirmed">
+                <th class="span1 key"></th>
+                <th class="span2">XML/HTML</th>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">⌘⇧A</td>
+                <td class="span2">select content &gt; tag</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">⌘⌥ .</td>
+                <td class="span2">close tag</td>
+              </tr>
+
+              <tr class="unconfirmed">
+                <th class="span1 key"></th>
+                <th class="span2">Marks</th>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">⌘K space</td>
+                <td class="span2">set mark // ⌘K; for me</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">⌘KW</td>
+                <td class="span2">delete from cursor to mark</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">⌘KA</td>
+                <td class="span2">select from cursor to mark</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">⌘KG</td>
+                <td class="span2">clear mark</td>
+              </tr>-->
+
+
+            </tbody>
+          </table>
+        </div>
+
+        <div class="span4">
+          <table class="table" border="0">
+            <thead>
+              <tr class="unconfirmed">
+                <th class="span1">⇧ ⌃⌥⌘</th>
+                <th class="span2">General</th>
+              </tr>
+            </thead>
+            <tr>
+              <td class="span1 key">⌘,</td>
+              <td class="span2">(User) Preferences</td>
+            </tr>
+            
+            <tr class="unconfirmed">
+              <td class="span1 key">⌃‘</td>
+              <td class="span2">Console</td>
+            </tr>
+            
+            
+            
+            <tr class="unconfirmed">
+              <th class="span1"></th>
+              <th class="span2">File</th>
+            </tr>
+            
+            <tr>
+              <td class="span1 key">⌘⇧T</td>
+              <td class="span2">Re-open closed file</td>
+            </tr>
+            <tr class="unconfirmed">
+              <td class="span1 key">⌘⇧N</td>
+              <td class="span2">new window (project)</td>
+            </tr>
+            
+            
+            <tr class="unconfirmed">
+              <th class="span1"></th>
+              <th class="span2">Edit</th>
+            </tr>
+<!-- Undo -->
+            <tr>
+              <td class="span1 key">⌘Y</td>
+              <td class="span2">redo or repeat</td>
+            </tr>
+            <tr>
+              <td class="span1 key">⌘U</td>
+              <td class="span2">soft undo (movement)</td>
+            </tr>
+            <tr>
+              <td class="span1 key">⌘⇧U</td>
+              <td class="span2">soft redo (movement)</td>
+            </tr>
+
+            <tr>
+              <td class="span1 key">⇧⌘V</td>
+              <td class="span2">paste and ident</td>
+            </tr>
+            
+<!-- Line -->
+            <tr>
+              <td class="span1 key">⌘]</td>
+              <td class="span2">Indent current line(s)</td>
+            </tr>
+            <tr>
+              <td class="span1 key">⌘[</td>
+              <td class="span2">Un-indent current line(s)</td>
+            </tr>
+            <tr>
+              <td class="span1 key">⌘⇧D</td>
+              <td class="span2">duplicate line(s)</td>
+            </tr>
+            <tr>
+              <td class="span1 key">⌘J</td>
+              <td class="span2">join lines</td>
+            </tr>
+
+<!-- Comment -->
+            <tr>
+              <td class="span1 key">⌘/</td>
+              <td class="span2">comment</td>
+            </tr>
+            <tr>
+              <td class="span1 key">⌘⌥/</td>
+              <td class="span2">block comment</td>
+            </tr>
+
+<!-- Text -->
+            <tr>
+              <td class="span1 key">⌃⇧K</td>
+              <td class="span2">delete line</td>
+            </tr>
+
+            <tr>
+              <td class="span1 key">⌘⇧↩</td>
+              <td class="span2">insert line before</td>
+            </tr>
+            <tr>
+              <td class="span1 key">⌘↩</td>
+              <td class="span2">insert line after</td>
+            </tr>
+            <tr>
+              <td class="span1 key">⌘KK</td>
+              <td class="span2">delete - cursor &gt; end l</td>  
+            </tr>       
+            <tr>
+              <td class="span1 key">⌘K⌫</td>
+              <td class="span2">delete cursor &gt; start l</td>
+            </tr>
+<!-- Tag -->
+
+<!-- Case -->
+            <tr>
+              <td class="span1 key">⌘K ⌘U</td>
+              <td class="span2">upper case</td>
+            </tr>
+            <tr>
+              <td class="span1 key">⌘K ⌘L</td>
+              <td class="span2">lower case</td>
+            </tr>
+            <!--<tr>
+              <td class="span1 key">⌃space</td>
+              <td class="span2">autocomplete +repeat</td>
+            </tr>-->
+
+
+            
+            <tr>
+              <th class="span1"></th>
+              <th class="span2">Selection</th>
+            </tr>
+            
+            <tr>
+              <td class="span1 key">⌘L</td>
+              <td class="span2">Expand select line (+repeat)</td>
+            </tr>
+            
+            <tr>
+              <td class="span1 key">⌘D</td>
+              <td class="span2">Expand select word (+repeat)</td>
+            </tr>
+            
+            <tr class="unconfirmed">
+              <td class="span1 key">⌃⇧M</td>
+              <td class="span2">Expand select &gt; brackets (current parent­heses)</td>
+            </tr>
+            
+            <tr>
+              <td class="span1 key">⌘⌃G</td>
+              <td class="span2">select all occurrences</td>
+            </tr>
+            
+
+            <tr>
+              <th class="span1 key"></th>
+              <th data-ds-editmark="true" class="span2">Find</th>
+            </tr>
+            <tr>
+              <td class="span1 key">⌘F</td>
+              <td class="span2">find</td>
+            </tr>
+            <tr>
+              <td class="span1 key">⌘G</td>
+              <td class="span2">Find next</td>
+            </tr>
+            <tr>
+              <td class="span1 key">⇧⌘G</td>
+              <td class="span2">Find previous</td>
+            </tr>
+            <tr>
+              <td class="span1 key">⌘I</td>
+              <td class="span2">Incremental find</td>
+            </tr>
+            <tr>
+              <td class="span1 key">⌘⌥G</td>
+              <td class="span2">find next occurrence</td>
+            </tr>
+            <tr>
+              <td class="span1 key">⌘⇧F</td>
+              <td class="span2">find in files</td>
+            </tr>
+            <tr>
+              <td class="span1 key">⌘⌥F</td>
+              <td class="span2">replace</td>
+            </tr>
+            <tr>
+              <td class="span1 key">⌘⌥E</td>
+              <td class="span2">replace next</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="span4">
+          <table class="table" border="0">
+              <tr class="unconfirmed">
+                <th class="span1"></th>
+                <th class="span2">View</th>
+              </tr>
+              <tr>
+                <td class="span1 key">⌘F</td>
+                <td class="span2">Full Screen Mode</td>
+              </tr>
+              <tr>
+                <td class="span1 key">⌘KB</td>
+                <td class="span2">toggle side bar</td>
+              </tr>
+              <tr>
+                <td class="span1 key">⌃⇧⌘F</td>
+                <td class="span2">Distraction-Free Mode</td>
+              </tr>
+
+
+              <tr>
+                <th class="span1"></th>
+                <th class="span2">Goto</th>
+              </tr>
+              <tr>
+                <td class="span1 key">⌘P</td>
+                <td class="span2">Go to Anything</td>
+              </tr>
+              <tr>
+                <td class="span1 key">⌘R</td>
+                <td class="span2">go to Symbol (methods)</td>
+              </tr>
+              <tr>
+                <td class="span1 key">⌃G</td>
+                <td class="span2">Go to line number (:)</td>
+              </tr>
+
+              <tr>
+                <td class="span1 key">⌥⌘→</td>
+                <td>Next File</td>
+              </tr>
+              <tr>
+                <td class="span1 key">⌥⌘←</td>
+                <td>Previous File</td>
+              </tr>
+              <tr>
+                <td class="key">⌘T</td>
+                <td>Go to File</td>
+              </tr>
+
+
+
+              <tr>
+                <td class="span1 key">⌃L</td>
+                <td class="span2">Scroll to Selection</td>
+              </tr>
+              <tr>
+                <td class="span1 key">⌃⌥↑</td>
+                <td class="span2">Scroll line up</td>
+              </tr>
+              <tr>
+                <td class="span1 key">⌃⌥↓</td>
+                <td class="span2">Scroll line down</td>
+              </tr>
+
+              <tr class="unconfirmed">
+                <td class="span1 key">⌘←</td>
+                <td class="span2">go to beginning of line (conflicts with default Mission Control shortcut)</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">⌘→</td>
+                <td class="span2">go to end of line (conflicts with default Mission Control shortcut)</td>
+              </tr>
+
+              <!--<tr class="unconfirmed">
+                <td class="span1 key">⌃-a and ⌃-e</td>
+                <td class="span2">end of line</td>
+              </tr>-->
+
+
+              <tr>
+                <td class="span1 key">⌘↑</td>
+                <td class="span2">go to start of file</td>
+              </tr>
+              <tr>
+                <td class="span1 key">⌘↓</td>
+                <td class="span2">go to end of file</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">⌘;</td>
+                <td class="span2">Go to word (#)</td>
+              </tr>
+              <tr>
+                <td class="span1 key">⌥←</td>
+                <td class="span2">Previous word</td>
+              </tr>
+              <tr>
+                <td class="span1 key">⌥→</td>
+                <td class="span2">Next word</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">⌃M</td>
+                <td class="span2">Jump to Matching Brackets (parent­heses)</td>
+              </tr>
+
+
+              <tr class="unconfirmed">
+                <th class="span1 key"></th>
+                <th class="span2">Bookmarks</th>
+              </tr>
+<!--
+              <tr class="unconfirmed">
+                <td class="span1 key">⌘F2</td>
+                <td class="span2">toggle bookmark</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">F2</td>
+                <td class="span2">next bookmark</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">⇧F2</td>
+                <td class="span2">previous bookmark</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">⌘⇧F2</td>
+                <td class="span2">clear bookmarks</td>
+              </tr>
+-->
+
+              <tr class="unconfirmed">
+                <th class="span1 key"></th>
+                <th class="span2">Tools</th>
+              </tr>
+
+              <tr>
+                <td class="span1 key">⇧⌘P</td>
+                <td class="span2">command palette</td>
+              </tr>
+
+              <tr>
+                <td class="span1 key"></td>
+                <td class="span2">New Snippet</td>
+              </tr>
+
+              <tr>
+                <td class="span1 key"></td>
+                <td class="span2">Gist</td>
+              </tr>
+
+              <tr class="unconfirmed">
+                <td class="span1 key">⌘B</td>
+                <td class="span2">Build</td>
+              </tr>
+
+
+
+
+
+
+
+<!--
+              <tr class="unconfirmed">
+                <th class="span1 key"></th>
+                <th class="span2">????????</th>
+              </tr>
+-->
+
+
+
+
+              <tr class="unconfirmed">
+                <th class="span1 key"></th>
+                <th class="span2">Splits/Tabs</th>
+              </tr>
+              <!--
+              <tr class="unconfirmed">
+                <td class="span1 key">⌘⌥1</td>
+                <td class="span2">single column</td>
+              </tr>
+              <tr class="unconfirmed"> 
+                <td class="span1 key">⌘⌥2</td>
+                <td class="span2">two columns</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">⌘⌥5</td>
+                <td class="span2">grid (4 groups)</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">⌃[1,2,3,4]</td>
+                <td class="span2">focus group</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">⌃⇧[1,2,3,4]</td>
+                <td class="span2">move file to group/</td>
+              </tr>
+              <tr class="unconfirmed">
+                <td class="span1 key">⌘[1,2,3...]</td>
+                <td class="span2">select tab</td>
+              </tr>
+-->
+
+
+
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>
